@@ -360,56 +360,58 @@ body.dark-mode {
 
 /*night owls*/
 #slide-grid {
-    display: grid;
-    grid-template-columns: 350px 450px; 
-    grid-template-rows: 200px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
-    margin-bottom: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-sizing: border-box;
 }
 
 .nightmind {
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    flex: 1;
+    height: 350px;
+    border-radius: 10px;
+    transform: 0.3s;
+    cursor: pointer;
 }
 
 .nightslide {
-    grid-column: 2;
-    grid-row: 1;
+    flex: 1;
+    height: 350px;
+    border-radius: 10px;
+    transform: 0.3s;
+    cursor: pointer;
 }
 
 .nightbrain {
-    grid-column: 2;
-    grid-row: 2;
+    flex: 1;
+    height: 350px;
+    border-radius: 10px;
+    transform: 0.3s;
+    cursor: pointer;
 }
 
 #slide-grid img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
 }
 
-.nightmind {
-    transform: 0.3s;
-    cursor: pointer;
-}
 .nightmind:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-.nightslide {
-    transform: 0.3s;
-    cursor: pointer;
-}
 .nightslide:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-.ngihtbrain {
-    transform: 0.3s;
-    cursor: pointer;
-}
 .nightbrain:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
@@ -434,10 +436,6 @@ body.dark-mode {
   object-fit: contain; 
 }
 
-.nightmind {
-    grid-row: 1/3;
-}
-
 #slide-grid img {
     width: 100%;
     height: 100%;
@@ -446,17 +444,17 @@ body.dark-mode {
     border-radius: 4px;
 }
 
-
 /* for mobile */
 @media (max-width: 800px) {
     #slide-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
     .nightmind, .nightslide, .nightbrain {
-        grid-column: 1;
-        grid-row: auto;
-        height: 300px;
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
     }
 }
 

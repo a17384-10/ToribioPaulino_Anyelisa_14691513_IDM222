@@ -43,7 +43,7 @@ toggle.addEventListener('click', () => {
         /* ask philip why this is not changing back */
         resume.style.backgroundColor = '#68e8ff';
     }
-});
+}); 
 
 document.querySelectorAll('.grid-container img').forEach(image => {
   image.onclick = () => {

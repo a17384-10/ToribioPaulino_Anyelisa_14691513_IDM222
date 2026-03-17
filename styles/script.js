@@ -1,5 +1,5 @@
 
-
+//code for zooming into the pictures
 document.querySelectorAll('.grid-container img').forEach(image => {
   image.onclick = () => {
 

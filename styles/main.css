@@ -7,6 +7,7 @@ body{
     background-color: #bdf7ff;;
 }
 
+/*header*/
 .DR {
     background-image: url('../assets/thumbnail.png');
     background-size: cover;       
@@ -19,11 +20,7 @@ body{
     padding: 0;
 }
 
-:root {
-    --bg-color: #bdf7ff;
-    --text-color: #160333;
-}
-/* title + link to my works + toggle */
+/* title + link to my works */
 .top {
     display: flex;
     justify-content: space-between;
@@ -39,7 +36,7 @@ body{
     margin-top: 5px;
 }
 
-/* info box */
+/* welcome box */
 .topbox {
     display: flex;
     background-color: #68e8ff;
@@ -72,7 +69,6 @@ body{
     transition: transform 0.3s, box-shadow 0.2s;
 }
 
-/* ask philip how to make the toggle in dark mode change color */
 #toggle:hover {
     background-color: #37077f;
     transform: translateY(-2px);
@@ -135,6 +131,7 @@ body{
 .contact-links a:hover {
   transform: translateY(-3px);
 }
+
 /*icons*/
 .git-link {
     width: 70px;
@@ -163,7 +160,7 @@ body{
 }
 
 .separator img {
-  width: 200px;   /* adjust size */
+  width: 200px;
   height: auto;
 }
 
@@ -186,13 +183,13 @@ body{
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
+/*info boxes*/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 30px;
 }
-
 
 .info {
     padding: 20px;
@@ -463,8 +460,6 @@ body{
     border-radius: 10px;
     display: block;
 }
-
-
 
 /*footer*/
 .footer {

@@ -4,13 +4,7 @@ body{
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #160333;
-
-    /* dark mode settings + button */
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.5s, color 0.5s;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    background-color: #bdf7ff;;
 }
 
 .DR {
@@ -28,11 +22,6 @@ body{
 :root {
     --bg-color: #bdf7ff;
     --text-color: #160333;
-}
-
-body.dark-mode {
-    --bg-color: #160333;
-    --text-color: #bdf7ff;
 }
 /* title + link to my works + toggle */
 .top {
@@ -95,9 +84,11 @@ body.dark-mode {
 
 /* link to my works and the rest of the pages (portfolio) */
 .button {
+    display: inline-block;
     margin-bottom: 20px;
     padding: 10px 20px;
     background-color: #160333;
+    text-decoration: none;
     color: #bdf7ff;
     border: none;
     border-radius: 30px;
@@ -105,7 +96,6 @@ body.dark-mode {
     transition: transform 0.3s, box-shadow 0.2s;
 }
 
-/* ask philip how to make the font color in dark mode change color */
 .button a {
     color: #bdf7ff;
     text-decoration: none;
@@ -276,7 +266,7 @@ body.dark-mode {
 }
 
 .llorona-rest {
-    transform: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .llorona-rest:hover {
@@ -285,7 +275,7 @@ body.dark-mode {
 }
 
 #llorona-poster {
-    transform: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 #llorona-poster:hover {
@@ -375,7 +365,7 @@ body.dark-mode {
     flex: 1;
     height: 350px;
     border-radius: 10px;
-    transform: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -383,7 +373,7 @@ body.dark-mode {
     flex: 1;
     height: 350px;
     border-radius: 10px;
-    transform: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -391,7 +381,7 @@ body.dark-mode {
     flex: 1;
     height: 350px;
     border-radius: 10px;
-    transform: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -490,8 +480,3 @@ body.dark-mode {
     margin-right: 0;
     box-sizing: border-box;
 }
-
-
-
-
-

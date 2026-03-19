@@ -100,7 +100,6 @@ body.dark-mode {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.2s;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -111,7 +110,7 @@ body.dark-mode {
 
 .button:hover {
     background-color: #37077f;
-    transition: ease-in-out 0.3s;
+    transition: transform ease 0.3s;
     transform: translateY(-2px);
 }
 

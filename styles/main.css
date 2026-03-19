@@ -1,10 +1,28 @@
+:root
+{
+    --bg-color: #bdf7ff;
+    --text-color: #23064e;
+    --box-color: #68e8ff;
+    --button-color: #6ae4ff;
+    --text-button: #562a9c;
+   
+}
 
 body{ 
     margin-left: 20px;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #160333;
-    background-color: #bdf7ff;;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    --bg-color: #210b3f;
+    --text-color: #bdf8ff;
+    --box-color: #562a9c;
+    --button-color: #4e1095;
+    --text-button: #6ae4ff;
 }
 
 /*header*/
@@ -39,7 +57,7 @@ body{
 /* welcome box */
 .topbox {
     display: flex;
-    background-color: #68e8ff;
+    background-color: var(--box-color);
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
@@ -47,6 +65,7 @@ body{
     justify-content: center;
     margin: 0 auto;
     width: 90%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .logo {
@@ -58,24 +77,16 @@ body{
     gap: 15px;
 }
 
-#toggle {
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #160333;
-    color: #bdf7ff;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.2s;
+.theme-toggle{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 50px;
+  transition: transform ease 0.3s;
 }
 
-#toggle:hover {
-    background-color: #37077f;
+.theme-toggle:hover {
     transform: translateY(-2px);
-}
-
-#toggle:active {
-    background-color: #813fe3;
 }
 
 /* link to my works and the rest of the pages (portfolio) */
@@ -83,17 +94,18 @@ body{
     display: inline-block;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #160333;
+    background-color: var(--button-color);
     text-decoration: none;
-    color: #bdf7ff;
+    color: var(--text-button);
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.2s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button a {
-    color: #bdf7ff;
+    color: var(--button-color);
     text-decoration: none;
 }
 
@@ -167,10 +179,11 @@ body{
 
 /*resume link */
 #resume {
-    background: #68e8ff;
+    background: var(--box-color);
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #resume img {
@@ -193,9 +206,10 @@ body{
 
 .info {
     padding: 20px;
-    background-color: #68e8ff;
+    background-color: var(--box-color);
     border-radius: 10px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .info h2 {
@@ -224,7 +238,7 @@ body{
 }
  /* projects */
 .submission {
-    border: 15px solid #68e8ff;
+    border: 15px solid var(--box-color);
     border-radius: 15px;
     overflow: hidden;
     flex: 1;
